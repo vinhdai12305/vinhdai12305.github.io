@@ -1,42 +1,193 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="vi">
 <head>
-  <title>My Site</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <style>
-    body,
-    h1 {
-      font-family: "Raleway", sans-serif
-    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    body,
-    html {
-      height: 100%
-    }
+  <title>Trần Vĩnh Đại | Software Engineer</title>
 
-    .bgimg {
-      background-image: url('https://images.unsplash.com/photo-1763246169636-4127600060b6?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-      min-height: 100%;
-      background-position: center;
-      background-size: cover;
-    }
-  </style>
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <meta name="title" content="Dai's Site" />
+  <meta name="description" content="Hi, my name is Trần Vĩnh Đại. I'm a Software Engineer."/>
+  <meta name="keywords" content="Trần Vĩnh Đại, portfolio, software engineer, web developer, VNUK"/>
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="en" />
+  <meta name="author" content="Trần Vĩnh Đại" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vinhdai12305.github.io/" />
+  <meta property="og:title" content="Dai's Site" />
+  <meta property="og:description" content="Hi, my name is Trần Vĩnh Đại. I'm a Software Engineer."/>
+  <meta property="og:image" content="https://vinhdai12305.github.io/banner.avif"/>
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://vinhdai12305.github.io/" />
+  <meta name="twitter:title" content="Dai's Site" />
+  <meta name="twitter:description" content="Hi, my name is Trần Vĩnh Đại. I'm a Software Engineer."/>
+  <meta name="twitter:image" content="https://vinhdai12305.github.io/banner.avif" />
+
+  <link href="/src/styles/application.css" rel="stylesheet" />
 </head>
 
-<body>
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      👨🏻‍💻
+<body class="font-sans">
+
+  <section
+    class="relative min-h-screen w-full flex items-center justify-center
+           bg-[url('/banner.avif')] bg-cover bg-center"
+  >
+    <div class="absolute inset-0 bg-black/40"></div>
+
+    <div
+      class="relative z-10 w-full lg:w-[80%] p-12
+             bg-white/70 text-stone-800 backdrop-blur-sm"
+    >
+      <h1 class="text-4xl lg:text-6xl font-bold mb-10 grid grid-cols-1 gap-4">
+        <span>
+          Hi, my name is
+          <span class="text-stone-700">Trần Vĩnh Đại</span>
+        </span>
+
+        <span class="text-stone-600 text-2xl lg:text-3xl font-medium">
+          I'm the Software Engineer.
+        </span>
+      </h1>
+
+      <a
+        href="#about-me"
+        class="inline-block uppercase border-2 border-stone-700 px-8 py-3
+               text-lg font-light text-stone-700
+               hover:bg-stone-700 hover:text-white
+               transition-colors duration-300"
+      >
+        Know more
+      </a>
     </div>
-    <div class="w3-display-middle">
-      <h1 class="w3-jumbo w3-animate-top">TRẦN VĨNH ĐẠI</h1>
-      <hr class="w3-border-grey" style="margin:auto;width:40%">
-      <p class="w3-large w3-center">10 days left</p>
+  </section>
+ 
+  <section
+    id="about-me"
+    class="min-h-screen w-full flex flex-col justify-center items-center
+           bg-stone-700 text-white px-6 lg:px-12"
+  >
+    <div class="w-full lg:w-[60%]">
+      <h2 class="uppercase text-3xl lg:text-5xl font-bold text-center mb-12">
+        About Me
+      </h2>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+        <div class="flex justify-center">
+          <img
+            src="/avatar.JPG"
+            alt="Trần Vĩnh Đại avatar"
+            class="w-36 h-48 object-cover shadow-lg"
+          />
+        </div>
+
+        <div class="lg:col-span-2 text-center lg:text-left">
+          <p class="text-lg font-light mb-6 leading-relaxed">
+            I am a Software Engineering student at the Vietnam–UK Institute for Research and Executive Education.
+            My goal is to obtain an internship to gain practical experience, enhance my technical skills, and contribute to software development projects.
+          </p>
+
+          <a
+            href="https://drive.google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block uppercase border-2 border-white px-6 py-3
+                   hover:bg-white hover:text-stone-700
+                   transition-colors"
+          >
+            View My CV
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+  
+  <section
+    id="contact"
+    class="bg-white min-h-[500px] w-full flex flex-col
+           justify-center items-center p-6 lg:p-12 text-gray-800"
+  >
+    <div class="w-full lg:w-[60%] mb-6 text-center">
+      <h2 class="uppercase text-2xl lg:text-5xl font-bold mb-6">
+        Contact
+      </h2>
+
+      <p class="flex flex-col items-center pt-5 pb-5 text-center">
+        <span class="text-2xl text-stone-600 mb-3 font-medium">
+          I LOOK FORWARD TO WORKING WITH YOU
+        </span>
+        <span class="text-base text-gray-600">
+          I'm so happy that my skills might bring value to you.
+          Let's connect for work.
+        </span>
+      </p>
+    </div>
+
+    <a
+      href="mailto:dai.tran230909@vnuk.edu.vn?subject=Hi, I want to connect for work"
+      class="border-2 border-stone-600 px-8 py-3
+             uppercase text-stone-700 font-light
+             hover:bg-stone-600 hover:text-white
+             transition-colors"
+    >
+      Send an email now
+    </a>
+  </section>
+
+  <footer
+    class="bg-stone-700 min-h-[300px] pt-12 pb-12
+           flex justify-center items-center"
+  >
+    <div class="w-[60%] flex flex-col justify-center items-center">
+      <ul class="flex flex-row">
+        <li class="pl-4 pr-4 hover:-translate-y-2 transition">
+          <a
+            href="https://www.facebook.com/vinh.ai.763385/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img class="w-10 grayscale hover:grayscale-0 transition" src="/facebook.svg" alt="Facebook" />
+          </a>
+        </li>
+
+        <li class="pl-4 pr-4 hover:-translate-y-2 transition">
+          <a
+            href="https://www.instagram.com/daivinh__/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img class="w-10 grayscale hover:grayscale-0 transition" src="/instagram.svg" alt="Instagram" />
+          </a>
+        </li>
+
+        <li class="pl-4 pr-4 hover:-translate-y-2 transition">
+          <a
+            href="https://github.com/vinhdai12305"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img class="w-10 grayscale hover:grayscale-0 transition" src="/github.svg" alt="GitHub" />
+          </a>
+        </li>
+      </ul>
+
+      <hr class="w-1/2 border-stone-900 mt-10" />
+
+      <p class="text-lg text-stone-400 mt-5 text-center">
+        © 2025 – Trần Vĩnh Đại
+      </p>
+    </div>
+  </footer>
+  
+
+  <script type="module" src="/src/scripts/application.js"></script>
+
 </body>
 </html>
